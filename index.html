@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raj Rishav · Data & BI Portfolio</title>
+  <meta name="description" content="Portfolio of Raj Rishav — Data Analyst & Business Intelligence Specialist. Projects in SQL, Python, Tableau, Power BI, ETL, and Supply Chain analytics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1220;         /* deep navy */
+      --card:#11182a;       /* slightly lighter */
+      --muted:#97a3b6;      /* muted text */
+      --text:#e6edf7;       /* main text */
+      --brand:#4c8bf5;      /* accent */
+      --brand-2:#7bdcb5;    /* secondary accent */
+      --ring:rgba(76,139,245,.35);
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 18px;
+    }
+    html{scroll-behavior:smooth}
+    body{margin:0;background:linear-gradient(180deg,#0a0f1b, #0b1220 15%, #0b1220 85%, #0a0f1b);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1080px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;background:rgba(11,18,32,.7);backdrop-filter:saturate(160%) blur(8px);z-index:10;border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .nav a.logo{font-weight:800;letter-spacing:.3px;color:#fff}
+    .nav ul{display:flex;gap:14px;list-style:none;margin:0;padding:0}
+    .chip{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);padding:8px 12px;border-radius:9999px;color:var(--muted);font-size:12px}
+    .btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--brand),#2f6fe9);color:white;padding:12px 16px;border-radius:12px;font-weight:600;border:none;box-shadow:var(--shadow)}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 14px 40px rgba(76,139,245,.35)}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,.1);color:var(--text)}
+    .grid{display:grid;gap:18px}
+    @media (min-width: 900px){
+      .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:32px;align-items:center}
+    }
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .card .content{padding:22px}
+    .section{padding:52px 0}
+    h1{font-size:40px;line-height:1.15;margin:16px 0 8px}
+    h2{font-size:28px;margin:0 0 14px}
+    h3{font-size:18px;margin:0 0 8px}
+    p{color:#d3d9e5}
+    .muted{color:var(--muted)}
+    .tag{display:inline-block;padding:6px 10px;border-radius:9999px;border:1px solid rgba(255,255,255,.1);font-size:12px;color:#cbd6ea}
+    .tags{display:flex;flex-wrap:wrap;gap:8px}
+    .kpi{display:flex;gap:14px;align-items:center}
+    .kpi strong{font-size:22px}
+    .list{display:grid;gap:10px}
+    .project-thumb{border-top-left-radius:var(--radius);border-top-right-radius:var(--radius);width:100%;height:220px;object-fit:cover;background:#0f1524}
+    .footer{border-top:1px solid rgba(255,255,255,.08);padding:36px 0;color:var(--muted);text-align:center}
+    .split{display:grid;gap:18px}
+    @media(min-width: 820px){.split{grid-template-columns:1fr 1fr}}
+    .resume{display:flex;gap:12px;flex-wrap:wrap}
+    .sr{position:absolute;left:-10000px}
+    .pillnav a{padding:8px 12px;border:1px solid rgba(255,255,255,.08);border-radius:9999px;color:#cbd6ea}
+    .pillnav a:hover{background:rgba(255,255,255,.06)}
+    .avatar{width:140px;height:140px;border-radius:18px;object-fit:cover;border:1px solid rgba(255,255,255,.12)}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Raj Rishav",
+    "jobTitle": "Data Analyst & Business Intelligence Specialist",
+    "email": "mailto:rajrishav697@gmail.com",
+    "url": "https://rajrishav1.github.io",
+    "alumniOf": {"@type":"CollegeOrUniversity","name":"Arizona State University"},
+    "knowsAbout": ["SQL","Python","Tableau","Power BI","ETL","Data Warehousing","dbt","BigQuery"],
+    "sameAs": ["https://www.linkedin.com/in/raj--rishav"]
+  }
+  </script>
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header>
+    <div class="container nav">
+      <a href="#home" class="logo">RR</a>
+      <nav class="pillnav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="container section hero">
+    <div>
+      <span class="chip" aria-hidden="true">Open to: Data Analyst · BI Analyst · Product (Data)</span>
+      <h1>Hi, I'm <span style="color:var(--brand)">Raj Rishav</span> — I turn messy data into clear business decisions.</h1>
+      <p class="muted">M.S. Business Analytics @ ASU · 3+ years across analytics, ETL, dashboards & data ops. Comfortable with SQL, Python, Tableau, Power BI, dbt, and BigQuery.</p>
+      <div class="resume" style="margin:18px 0 8px">
+        <a class="btn" href="#projects">See my work</a>
+        <a class="btn secondary" href="RajRishav_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+        <a class="btn secondary" href="https://github.com/rajrishav1" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn secondary" href="https://www.linkedin.com/in/raj--rishav" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <div class="kpi">
+        <div class="tag">ETL pipelines</div>
+        <div class="tag">Dashboards</div>
+        <div class="tag">Forecasting</div>
+        <div class="tag">A/B insights</div>
+      </div>
+    </div>
+    <div>
+      <img src="avatar.jpg" alt="Portrait of Raj Rishav" class="avatar" />
+      <div class="card" style="margin-top:18px">
+        <div class="content">
+          <h3 style="margin:0 0 6px">What I do</h3>
+          <p class="muted">I design data models, build pipelines, and ship dashboards that drive action. I love translating questions from product & ops into analysis that moves metrics.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- About -->
+  <section id="about" class="container section">
+    <div class="card">
+      <div class="content">
+        <h2>About</h2>
+        <p>I'm a Data & BI specialist with a knack for simplifying complexity. Recently at <strong>Arizona State University (Data Research Analyst)</strong>, I built SQL/Python workflows to clean and model datasets, enabling self-serve dashboards and repeatable reporting. Earlier, I delivered an <strong>HonorHealth capstone</strong> streamlining implant inventory decisions with Tableau.</p>
+        <p class="muted">I enjoy supply chain analytics, product analytics, and the intersection of data + decision-making.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="container section">
+    <h2>Skills & Tools</h2>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+      <div class="card"><div class="content">
+        <h3>Data</h3>
+        <div class="tags">
+          <span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">dbt</span><span class="tag">BigQuery</span>
+        </div>
+      </div></div>
+      <div class="card"><div class="content">
+        <h3>BI</h3>
+        <div class="tags">
+          <span class="tag">Tableau</span><span class="tag">Power BI</span><span class="tag">Looker</span><span class="tag">Data Modeling</span>
+        </div>
+      </div></div>
+      <div class="card"><div class="content">
+        <h3>Ops</h3>
+        <div class="tags">
+          <span class="tag">ETL</span><span class="tag">Airflow</span><span class="tag">Git</span><span class="tag">APIs</span>
+        </div>
+      </div></div>
+      <div class="card"><div class="content">
+        <h3>Methods</h3>
+        <div class="tags">
+          <span class="tag">Forecasting</span><span class="tag">A/B</span><span class="tag">Anomaly Detection</span><span class="tag">Segmentation</span>
+        </div>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="container section">
+    <h2>Projects</h2>
+
+    <article class="card" aria-labelledby="p1-title">
+      <img class="project-thumb" src="images/honorhealth-dashboard.png" alt="HonorHealth consignment dashboard preview" />
+      <div class="content">
+        <h3 id="p1-title">Surgical Implant Inventory Optimization — HonorHealth (Capstone)</h3>
+        <p class="muted">Python ETL + Tableau dashboards on implant inventory and consignment opportunities.</p>
+        <ul class="list">
+          <li>Built Python pipelines to ingest & clean multi-source data into a warehouse-ready model.</li>
+          <li>Designed <strong>6+ Tableau dashboards</strong> surfacing stockouts, overstock, and vendor performance.</li>
+          <li>Helped reduce overstock by <strong>~8%</strong> and minimize stockouts (pilot departments).</li>
+        </ul>
+        <div class="tags"><span class="tag">Python</span><span class="tag">ETL</span><span class="tag">Tableau</span><span class="tag">SQL</span></div>
+        <p style="margin-top:12px"><a href="#" aria-label="Case study (opens new)">Read case study</a> · <a href="#" aria-label="Open Tableau public dashboard">Live dashboard</a></p>
+      </div>
+    </article>
+
+    <article class="card" aria-labelledby="p2-title">
+      <img class="project-thumb" src="images/asu-trends.png" alt="ASU research trends dashboard preview" />
+      <div class="content">
+        <h3 id="p2-title">Research Trends Analytics — Arizona State University</h3>
+        <p class="muted">End-to-end SQL + Python workflows powering KPI dashboards for stakeholders.</p>
+        <ul class="list">
+          <li>Modeled datasets in SQL; automated refreshes; created quality checks and alerting.</li>
+          <li>Shipped KPI dashboards enabling faster decision cycles across units.</li>
+          <li>Improved data freshness and reduced manual reporting time.</li>
+        </ul>
+        <div class="tags"><span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Power BI</span><span class="tag">Automation</span></div>
+      </div>
+    </article>
+
+    <article class="card" aria-labelledby="p3-title">
+      <img class="project-thumb" src="images/supply-forecast.png" alt="Supply chain forecast chart" />
+      <div class="content">
+        <h3 id="p3-title">Supply & Demand Forecasting (Personal Project)</h3>
+        <p class="muted">Time-series forecasting to optimize stock levels and lead times.</p>
+        <ul class="list">
+          <li>Built baseline SARIMAX & Prophet models; compared MAPE across SKUs.</li>
+          <li>Scenario exploration to balance service levels vs. inventory cost.</li>
+          <li>Interactive dashboard to visualize forecasts & confidence intervals.</li>
+        </ul>
+        <div class="tags"><span class="tag">Python</span><span class="tag">Forecasting</span><span class="tag">Dashboards</span></div>
+        <p style="margin-top:12px"><a href="#">GitHub repo</a> · <a href="#">Demo notebook</a></p>
+      </div>
+    </article>
+  </section>
+
+  <!-- Experience / Education -->
+  <section id="experience" class="container section">
+    <h2>Experience</h2>
+    <div class="split">
+      <div class="card"><div class="content">
+        <h3>Data Research Analyst — Arizona State University</h3>
+        <p class="muted">Jul 2025 – Present · Tempe, AZ</p>
+        <ul class="list">
+          <li>Built SQL models & Python scripts to automate KPI reporting & QA checks.</li>
+          <li>Partnered with stakeholders to translate questions into dashboards & analyses.</li>
+          <li>Improved data refresh SLAs and reduced manual effort for recurring reports.</li>
+        </ul>
+      </div></div>
+      <div class="card"><div class="content">
+        <h3>Data & BI Projects (Freelance/Academic)</h3>
+        <p class="muted">2024 – 2025</p>
+        <ul class="list">
+          <li>ETL pipelines consolidating disparate sources; dimensional models for BI.</li>
+          <li>Product analytics deep dives (funnels, retention, experimentation inputs).</li>
+          <li>Executive-ready dashboards with clear narratives & action hooks.</li>
+        </ul>
+      </div></div>
+    </div>
+  </section>
+
+  <section id="education" class="container section">
+    <h2>Education</h2>
+    <div class="card"><div class="content">
+      <strong>M.S., Business Analytics</strong> — Arizona State University (W. P. Carey)<br />
+      <span class="muted">Key coursework: Data Mining, Visualization, Statistical Modeling, Supply Chain Analytics.</span>
+    </div></div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container section">
+    <div class="card"><div class="content">
+      <h2>Contact</h2>
+      <p class="muted">Feel free to reach out for opportunities, collaboration, or a quick chat.</p>
+      <p>
+        <a href="mailto:rajrishav697@gmail.com" class="btn">Email Me</a>
+        <a class="btn secondary" href="https://www.linkedin.com/in/raj--rishav" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn secondary" href="tel:+17024489873">+1 (702) 448-9873</a>
+      </p>
+    </div></div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="yr"></span> Raj Rishav · Built with GitHub Pages
+    </div>
+  </footer>
+
+  <script>
+    // small enhancement: current year
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
